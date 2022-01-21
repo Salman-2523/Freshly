@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Admin page</h1>
+    <form id="form">
+        <input type="text" placeholder="item_image_url" id="image"><br>
+        <input type="text" placeholder="item_name" id="name"><br>
+               
+        <input type="text" placeholder="para" id="details"><br>
+        <input type="text" placeholder="item_price" id="price"><br>
+        <input type="submit">  
+        
+
+    </form>
+    <button>Home Page</button>
+</body>
+</html>
+
+<script>
+    document.querySelector('#form').addEventListener('submit', addItem)
+  
+     var product_arr = JSON.parse(localStorage.getItem('product_details')) || [];
+    function addItem(event){
+        event.preventDefault();
+       var item_name = document.querySelector('#name').value;
+       var item_details = document.querySelector('#details').value;
+       var item_price = document.querySelector('#price').value;
+       var item_image_url = document.querySelector('#image').value;
+    
+
+     var product = {
+         name: item_name,
+         details: item_details,
+         price: item_price,
+         img: item_image_url,
+         
+     }
+        product_arr.push(product);
+        localStorage.setItem('product_details', JSON.stringify(product_arr))
+    }
+    document.querySelector('button').addEventListener('click', home)
+    function home(){
+        window.location.href = 'product.html'
+    }
+</script>

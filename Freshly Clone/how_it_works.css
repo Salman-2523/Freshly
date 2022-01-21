@@ -1,0 +1,355 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+  }
+  .top_nav {
+    display: flex;
+    height: 32px;
+    width: 100%;
+    background-color: white;
+    justify-content: center;
+    gap: 20px;
+  }
+  #freshly_icon {
+    /* border: 1px solid red; */
+    height: 22px;
+    width: 50px;
+    border-bottom: solid;
+  }
+
+  #freshlybusiness {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    /* border: 1px solid black; */
+    height: 32px;
+    width: 50px;
+    font-weight: bold;
+  }
+  .inner_box {
+    display: flex;
+    height: 20px;
+    width: 180px;
+    /* border: 1px solid red; */
+    justify-content: space-between;
+    margin-top: 4px;
+  }
+  .main_nav {
+    top: 0;
+    /* position: fixed; */
+    display: flex;
+    height: 72px;
+    width: 100%;
+    padding: 8px 20px;
+    background-color: #fffdf7;
+    color: black;
+  }
+  .logo {
+    margin-left: 40px;
+    height: 24px;
+    width: 107px;
+    margin-top: 24px;
+  }
+  .sub_headings {
+    display: flex;
+    /* border: 1px solid red; */
+    height: 25px;
+    width: 600px;
+    margin: auto;
+    gap: 30px;
+    margin-left: 350px;
+  }
+  .sub_headings > div > a {
+    text-decoration: none;
+    color: black;
+  }
+  .login_signup {
+    /* border: 1px solid red; */
+    margin-right: 60px;
+  }
+  .login_signup > button {
+    padding: 10px 16px;
+    margin-top: 10px;
+    border: transparent;
+  }
+  .login_signup > button > a {
+    text-decoration: none;
+  }
+  #login {
+    background-color: #fffdf7;
+  }
+  #signup {
+    background-color: #3167ff;
+  }
+  #signup > a {
+    color: white;
+  }
+  .sub_sub_headings {
+    width: 100%;
+    height: 48px;
+    /* border: 1px solid red; */
+  }
+  #sub_text {
+    /* border: 1px solid red; */
+    list-style: none;
+    display: flex;
+    margin: auto;
+    height: 24px;
+    gap: 12px;
+    width: 50%;
+    padding: 0 30px;
+    margin-left: 550px;
+    margin-top: 10px;
+  }
+  #h1 {
+    text-align: center;
+    font-size: 48px;
+    margin-top: 55px;
+    margin-bottom: 50px;
+  }
+  .video_container {
+    height: 784px;
+    width: 100%;
+    background-color: #fffdf7;
+    margin-bottom: 100px;
+  }
+  #container_heading {
+    font-size: 38px;
+    padding-top: 55px;
+    text-align: center;
+    padding-bottom: 14px;
+  }
+  .container_para {
+    font-size: 14px;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  #video {
+    text-align: center;
+  }
+  .learn_more {
+    text-align: center;
+  }
+  .learn_more > h2 {
+    font-size: 38px;
+    padding-bottom: 10px;
+  }
+  .icons {
+    padding-top: 100px;
+    /* border: 1px solid red; */
+    display: flex;
+    width: 80%;
+    margin: auto;
+    justify-content: space-evenly;
+    margin-left: 180px;
+  }
+  .icons > div > h3 {
+    font-size: 24px;
+    /* padding-top: 40px; */
+  }
+  .icons > #first > h3 {
+    padding-top: 40px;
+    padding-bottom: 10px;
+  }
+  .icons > #second > h3 {
+    padding-top: 50px;
+    padding-bottom: 10px;
+  }
+  .icons > #third > h3 {
+    padding-top: 100px;
+    padding-bottom: 10px;
+  }
+  #learn_more_btn {
+    padding: 13px 16px 12px;
+    background-color: #3167ff;
+    color: white;
+    border: none;
+    font-size: 18px;
+    margin-top: 30px;
+    margin-bottom: 80px;
+    margin-left: 700px;
+  }
+  .column_flex {
+    /* border: 1px solid red; */
+    margin-bottom: 50px;
+  }
+
+  .delicious_options {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 35px;
+  }
+  .text {
+    padding-left: 32px;
+    padding-top: 80px;
+  }
+  .text > h3 {
+    font-size: 30px;
+  }
+  .text > p {
+    font-size: 16px;
+    line-height: 1.2rem;
+    padding-bottom: 20px;
+    text-align: left;
+  }
+  .learn_more_link {
+    color: #3167ff;
+  }
+  .bg {
+    height: 300px;
+    width: 100%;
+    background-image: url(https://assets-global.website-files.com/5d03b4e130118314af624b20/5ec2ac1d2f98b30604f1f132_20-spring-1-group-test-qa-1455-72-dpi.jpg);
+    background-position: 50% 50%;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #bg_btn {
+    padding: 13px 16px 12px;
+    background-color: #3167ff;
+    font-size: 18px;
+    color: #fff;
+    margin-top: 120px;
+    border: none;
+  }
+  .how_freshly_works {
+    background-color: #fffdf7;
+    margin-top: 60px;
+    text-align: center;
+  }
+  .how_freshly_works > h2 {
+    font-size: 38px;
+    margin-bottom: 10px;
+  }
+  .video_icons {
+    margin-top: 60px;
+    display: flex;
+    gap: 55px;
+    margin-left: 280px;
+  }
+  .how_freshly_works > h2,
+  p {
+    text-align: center;
+  }
+  .video_icons > div > p {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  #video_icon_btn {
+    padding: 13px 16px 12px;
+    background-color: #3167ff;
+    color: white;
+    border: none;
+    font-size: 18px;
+    margin-top: 40px;
+    margin-bottom: 80px;
+  }
+  .app_diet {
+    background-color: #fffdf7;
+    padding-bottom: 60px;
+  }
+  .why_choose_freshly_container {
+    padding: 64px 32px;
+    text-align: center;
+  }
+  .why_choose_freshly_container > h2 {
+    font-size: 38px;
+    padding-bottom: 10px;
+  }
+  .why_choose_freshly_container > p {
+    line-height: 1.2rem;
+    padding-bottom: 4rem;
+  }
+  .img_container {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+  }
+  .last_learn_more_btn {
+    padding: 13px 16px 12px;
+    background-color: #3167ff;
+    color: white;
+    border: none;
+    font-size: 18px;
+    margin-top: 40px;
+    margin-bottom: 34px;
+  }
+  #get_started {
+    height: 240px;
+    width: 100%;
+    background-color: #fffdf7;
+    text-align: center;
+  }
+  #get_started > h2 {
+    font-size: 38px;
+    padding-top: 70px;
+  }
+  #get_started > a > button {
+    padding: 13px 16px 12px;
+    background-color: #3167ff;
+    color: white;
+    border: none;
+    font-size: 18px;
+    margin-top: 30px;
+    /* margin-bottom: 34px; */
+  }
+  .footer {
+    padding-top: 60px;
+    display: flex;
+    height: 320px;
+    width: 100%;
+    background-color: white;
+    gap: 120px;
+  }
+  .footer_logo {
+    height: 28px;
+    width: 120px;
+    margin-left: 350px;
+    padding-top: 25px;
+  }
+  .company {
+    margin-left: 10px;
+    padding-top: 25px;
+    /* border: 1px solid red; */
+  }
+  .company > a {
+    display: list-item;
+    list-style: none;
+    line-height: 1.8rem;
+    color: #666;
+    text-decoration: none;
+  }
+  .learn_more {
+    padding-top: 25px;
+  }
+  .learn_more > a {
+    display: list-item;
+    list-style: none;
+    line-height: 1.8rem;
+    color: #666;
+    text-decoration: none;
+    text-align: left;
+  }
+  .join_us {
+    padding-top: 25px;
+  }
+  h6 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .social_media_icons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+  }
+  #iphone {
+    height: 40px;
+    width: 120px;
+    margin-bottom: 15px;
+  }
+  #android {
+    height: 40px;
+    width: 120px;
+  }

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .bg{
+            height: 520px;
+            width: 100%;
+            background-image: url(https://res.cloudinary.com/freshly/image/upload/c_crop,g_auto,dpr_auto,q_30,w_1500,h_900/v1494958610/joinnow-southchicken.jpg);
+            background-position-x: center;
+            background-position-y: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding-top: 100px;
+        
+        }
+        .sign_up_form{
+            height: 420px;
+            width: 800px;
+            border: 1px solid blue;
+            margin: auto;
+            /* padding-bottom: 40px; */
+            text-align: center;
+            background: hsla(0,0%,100%,.8);
+            
+        }
+         #name{
+             padding:  20px;
+             width: 400px;
+             margin-top: 25px;
+             margin-bottom: 20px;
+         }
+         #email{
+             padding: 20px;
+             width: 400px;
+             margin-bottom: 20px;
+         }
+         #password{
+             padding: 20px;
+             width: 400px;
+             margin-bottom: 20px;
+         }
+         #heading{
+             margin-bottom: 10px;
+         }
+         #btn{
+             padding: 20px;
+             width: 300px;
+             background-color: #2a6dff;
+             border-color: #2a6dff;
+             color: #fff;
+             font-weight: bold;
+             font-size: 1.2rem;
+             font-family: FavoritFreshly,Helvetica Neue,Helvetica,Arial,sans-serif;
+             cursor: pointer;
+         }
+         .footer {
+          display: flex;
+        height: 300px;
+        width: 100%;
+        background-color: white;
+        gap: 120px;
+        
+      }
+      .footer_logo{
+          height: 28px;
+          width: 120px;
+          margin-left: 350px;
+           padding-top: 25px;
+      }
+      .company{
+          margin-left: 10px;
+          padding-top: 25px;
+          /* border: 1px solid red; */
+      }
+      .company>a{
+        display: list-item;
+        list-style: none;
+        line-height: 1.8rem;
+        color: #2a6dff;
+      }
+      .learn_more{
+          padding-top: 25px;
+      }
+      .learn_more>a{
+          display: list-item;
+          list-style: none;
+          line-height: 1.8rem;
+          color: #2a6dff;
+      }
+      .join_us{
+          padding-top: 25px;
+      }
+      h6{
+          font-size: 16px;
+          margin-bottom: 10px;
+      }
+      .social_media_icons{
+          display: flex;
+          gap: 15px;
+          margin-bottom: 15px;
+      }
+      #iphone{
+        height: 40px;
+        width: 120px;
+        margin-bottom: 15px;
+        
+      }
+      #android{
+          height: 40px;
+          width: 120px;
+      }
+    </style>
+</head>
+<body>
+<div class="bg">
+         <div class="sign_up_form">
+                <h1 id="heading">Dinner's ready!</h1>
+                <h2>Chef-prepared, healthy meals delivered weekly</h2>
+                <input type="text" placeholder="Name" id="name"><br>
+                <input type="text" placeholder="Email" id="email"><br>
+                <input type="password" placeholder="Password" id="password"><br>
+                <button id="btn">Continue</button>
+         </div>
+</div>
+
+<div class="footer">
+    <div class="footer_logo">
+      <img
+        src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5fc4feea074f5b86a6c62285_freshly-logo-R.svg"
+        alt=""
+      />
+      &copy;Freshly Inc.
+    </div>
+    
+    <div class="company">
+        <h6>Company</h6>
+        <a href="">Careers</a>
+        <a href="">Contact Us</a>
+        <a href="">Press</a>
+        <a href="">Terms</a>
+        <a href="">Privacy</a>
+        
+    </div>
+    <div class="learn_more">
+        <h6>Learn More</h6>
+        <a href="">Plans & Menu</a>
+        <a href="">Why Freshly?</a>
+        <a href="">Gifts</a>
+        <a href="">Refer a Friend</a>
+        <a href="">FAQs</a>
+        <a href="">Blog</a>
+        <a href="">Students</a>
+    </div>
+    <div class="join_us">
+        <h6>Join Us</h6>
+        <div class="social_media_icons">
+             <div>
+                 <a href="">
+                  <i class="fab fa-facebook-square"></i>
+                 </a>
+             </div>
+             <div>
+                 <a href="">
+                  <i class="fab fa-instagram"></i>
+                 </a>
+             </div>
+             <div>
+                 <a href="">
+                  <i class="fab fa-twitter"></i>
+                 </a>
+             </div>
+             <div>
+                 <a href="">
+                  <i class="fab fa-pinterest"></i>
+                 </a>
+             </div>
+        </div>
+          <div>
+              <img src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5d6439d4fb92e7630e46976b_Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg" alt="" id="iphone">
+          </div>
+          <div>
+              <img src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5d643dd558306bfe1df5ef8b_google-play-badge.png" alt="" id="android">
+          </div>
+    </div>
+  </div>
+    
+</body>
+<script src="signup.js"></script>
+</html>
+
+<!-- <script>
+    document.querySelector('#btn').addEventListener('click', signUp)
+       var userDataBase = JSON.parse(localStorage.getItem('userDB')) || [];
+    function signUp(){
+        var name = document.querySelector('#name').value;
+        var email = document.querySelector('#email').value;
+        var password = document.querySelector('#password').value;
+
+        var userData = {
+            userName:name,
+            emailAddress:email,
+            password:password
+        }
+        
+        userDataBase.push(userData);
+        // console.log(userDataBase);
+        localStorage.setItem('userDB', JSON.stringify(userDataBase));
+        window.location.href = 'login.html'
+        
+    }
+</script> -->

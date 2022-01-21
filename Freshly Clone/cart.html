@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cart.css">
+    <!-- <style>
+        #cartcontent {
+            
+            display: grid;
+            grid-template-columns: repeat(3, 240px);
+            grid-template-rows: auto;
+            grid-gap: 20px;
+            margin-left: 40px;
+        }
+        
+        .mainitem {
+            width: 230px;
+            height: 320px;
+            background-color: white;
+            border-radius: 8px;
+            margin-right: 20px;
+            border: 1px solid whitesmoke;
+        }
+        
+        /* .mainitem:hover {
+            font-size: 17px;
+            cursor: pointer;
+            box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+            rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+        } */
+        
+        .mainitem>.up {
+            width: 100%;
+            height: 65%;
+            background-color: rgb(245, 238, 238);
+            border-radius: 8px;
+        }
+        
+        .down {
+            padding: 0px 10px;
+            padding-right: 20px;
+            background-color: rgb(255, 249, 249);
+        }
+
+        .mainitem img {
+            width: 230px;
+            height: 100%;
+        }
+
+        .inner {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .inner>div>p {
+            margin: 0px;
+        }
+        
+        .inner>button {
+            width: 60px;
+            height: 30px;
+            border-radius: 5px;
+            border: 0px;
+            color: whitesmoke;
+            background-color: rgb(9, 93, 72);
+        }
+        
+        button:hover {
+            
+            cursor: pointer;
+            background-color: rgb(108, 218, 5);
+        }
+
+        #triveni {
+            display: flex;
+        }
+
+        #triveni>div:nth-child(2) {
+            width: 300px;
+            height: 300px;
+            border: 1px solid rgb(177, 236, 233);
+            margin-left: 40px;
+            text-align: center;
+        }
+        
+        #raju {
+            padding: 20px;
+        }
+        
+        #raju>span {
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        #paypage {
+            padding: 13px 28px;
+            background-color: rgb(10, 156, 120);
+            font-size: 18px;
+            border: 0px;
+            border-radius: 7px;
+            margin-left: 15px;
+            margin-top: 30px;
+            color: white;
+        }
+        
+        #paypage:hover {
+            cursor: pointer;
+            font-size: 20px;
+            background-color: rgb(14, 206, 14);
+        }
+        #checkout_btn{
+            padding: 10px 30px;
+            margin-top: 10px;
+      border: transparent;
+      background-color: lightgray;
+      color: black;
+      font-weight: bold;
+      margin-left: 660px;
+      margin-top: 20px;
+      
+      
+    }
+    #cart_total{
+        /* text-align: center; */
+        margin-top: 100px;
+        margin-left: 660px;
+    }
+        
+    </style> -->
+</head>
+<body>
+    <div>
+        <div id="cartcontent"></div>
+    </div>
+    <div>
+        <h2 id="cart_total">Total: 300</h2>
+    </div>
+    <a href="checkout.html">
+        <button id="checkout_btn">checkout</button>
+    </a>
+</body>
+<script src="cart.js"></script>
+</html>
+
+
+
+<!-- <script>
+  var cartitem = JSON.parse(localStorage.getItem("Cartarr")) || [];
+    // console.log(cartitem.length)
+    display(cartitem);
+    
+    
+    
+    function display(cartitem) {
+        document.querySelector("#cartcontent").innerHTML = null;
+        cartitem.map(function (data, index) {
+            // console.log(data);
+            
+            var maindiv = document.createElement("div");
+            maindiv.setAttribute("class", "mainitem");
+
+            var divup = document.createElement("div");
+            divup.setAttribute("class", "up");
+            
+            var image = document.createElement("img");
+            image.setAttribute("src", data.image);
+            
+            var divdown = document.createElement("div");
+            divdown.setAttribute("class", "down");
+            
+            var name = document.createElement("p");
+            name.textContent = data.name;
+
+            var div1 = document.createElement("div");
+            div1.setAttribute("class", "inner");
+
+            var div2 = document.createElement("div");
+            
+            var para1 = document.createElement("p");
+            para1.textContent = data.desc;
+            
+            var para2 = document.createElement("p");
+            para2.textContent = data.price;
+
+            
+
+            
+            var btn = document.createElement("button");
+            btn.textContent = "Remove";
+            btn.addEventListener("click", function () {
+                btnfun(index);
+            });
+            
+            divup.append(image)
+            divdown.append(name, div1);
+            
+            div1.append(div2, btn);
+            div2.append(para1, para2);
+            
+            maindiv.append(divup, divdown)
+            document.querySelector("#cartcontent").append(maindiv);
+            
+        })
+        total();
+    }
+
+
+    
+    function btnfun(index) {
+        console.log(index)
+        cartitem.splice(index, 1);
+        localStorage.setItem("Cart", JSON.stringify(cartitem));
+        display(cartitem);
+    }
+    
+    
+
+</script> -->

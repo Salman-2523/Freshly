@@ -1,0 +1,490 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .top_nav {
+    display: flex;
+    height: 32px;
+    width: 100%;
+    background-color: white;
+    justify-content: center;
+    gap: 20px;
+  }
+  #freshly_icon {
+    /* border: 1px solid red; */
+    height: 22px;
+    width: 50px;
+    border-bottom: solid;
+  }
+
+  #freshlybusiness {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    /* border: 1px solid black; */
+    height: 32px;
+    width: 50px;
+    font-weight: bold;
+  }
+  .inner_box {
+    display: flex;
+    height: 20px;
+    width: 180px;
+    /* border: 1px solid red; */
+    justify-content: space-between;
+    margin-top: 4px;
+  }
+  .main_nav {
+    top: 0;
+    /* position: fixed; */
+    display: flex;
+    height: 72px;
+    width: 100%;
+    padding: 8px 20px;
+    background-color: #fffdf7;
+    color: black;
+  }
+  .logo {
+    margin-left: 40px;
+    height: 24px;
+    width: 107px;
+    margin-top: 24px;
+  }
+  .sub_headings {
+    display: flex;
+    /* border: 1px solid red; */
+    height: 25px;
+    width: 600px;
+    margin: auto;
+    gap: 30px;
+    margin-left: 350px;
+  }
+  .sub_headings > div > a {
+    text-decoration: none;
+    color: black;
+  }
+  .login_signup {
+    /* border: 1px solid red; */
+    margin-right: 60px;
+  }
+  .login_signup > button {
+    padding: 10px 16px;
+    margin-top: 10px;
+    border: transparent;
+  }
+  .login_signup > button > a {
+    text-decoration: none;
+  }
+  #login {
+    background-color: #fffdf7;
+  }
+  #signup {
+    background-color: #3167ff;
+  }
+  #signup > a {
+    color: white;
+  }
+  .flex {
+    display: flex;
+    /* margin-top: 90px; */
+    display: flex;
+    height: 700px;
+    width: 100%;
+  }
+  .flex > div {
+    /* border: 1px solid red; */
+    width: 50%;
+    height: 100%;
+  }
+  #meal_img {
+    background: url(https://assets-global.website-files.com/5d03b4e130118314af624b20/61d331e43b58ddc513d4f87c_Q1_Homepage_Banner_V1_Notext_Alt_crop_2.jpeg);
+    background-size: cover;
+    /* background-position:center; */
+    background-position: 0 0, 27% 50%;
+  }
+
+  .img_title {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    /* border: 1px solid red; */
+    margin-bottom: 10px;
+    margin-left: 18px;
+  }
+  .img_text {
+    font-size: 14px;
+    color: #fff;
+  }
+  #img_btn {
+    padding: 8px 15px;
+    background-color: #3167ff;
+    color: #fff;
+    border: transparent;
+  }
+  .img_info_div {
+    /* border: 1px solid red; */
+    margin-top: 400px;
+    margin-left: 400px;
+    height: 100px;
+    width: 220px;
+  }
+  .img_btn {
+    margin-top: 10px;
+    /* border: 1px solid red; */
+    margin-left: 97px;
+  }
+  #chef {
+    background-color: #fef9ea;
+  }
+  .chef_text {
+    height: 506px;
+    width: 600px;
+    /* border: 1px solid red; */
+    margin: auto;
+    padding: 40px;
+    margin-top: 50px;
+    margin-left: 5px;
+  }
+  .chef_text > h1 {
+    font-size: 64px;
+  }
+  .chef_text > div {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 55px;
+    margin-bottom: 10px;
+  }
+  #email {
+    border: transparent;
+    height: 40px;
+    width: 320px;
+    padding: 8px 12px;
+    margin-top: 5px;
+    margin-bottom: 8px;
+  }
+  #zipcode {
+    border: transparent;
+    height: 40px;
+    width: 142px;
+    padding: 8px 12px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+  }
+  .process {
+    height: 494px;
+    width: 100%;
+    background-color: #fffdf7;
+  }
+  #process_heading {
+    font-size: 48px;
+    text-align: center;
+    margin: 0 0 10px;
+    padding: 60px;
+  }
+  .menu {
+    height: 860px;
+    width: 100%;
+    /* border: 1px solid red; */
+    padding: 64px 32px;
+    background-image: url(https://assets-global.website-files.com/5d03b4e130118314af624b20/5d94e04ff2b857688f7138b6_home_image2.jpg);
+    margin-bottom: 2rem;
+  }
+  .plans_menu {
+    height: 800px;
+    width: 660px;
+    /* border: 1px solid black; */
+    margin: auto;
+    padding: 32px 35px;
+    background-color: white;
+  }
+  #menu_h1 {
+    font-size: 48px;
+  }
+  .sub_headline_text {
+    font-size: 18px;
+    margin-top: 10px;
+    line-height: 1.34em;
+  }
+
+  .home_form {
+    /* border: 1px solid red; */
+    height: 300px;
+    width: 600px;
+  }
+  #explore_meals {
+    padding: 8px 15px;
+    background-color: #3167ff;
+    color: #fff;
+    border: transparent;
+    cursor: pointer;
+  }
+  #area {
+    margin-bottom: 10px;
+  }
+  #how_it_works {
+    height: 400px;
+    margin-left: 3.2rem;
+  }
+  .tomato_bg {
+    height: 1044px;
+    width: 100%;
+    border: 1px solid bisque;
+    background-image: url(https://assets-global.website-files.com/5d03b4e130118314af624b20/5d94e04ff2b857688f7138b6_home_image2.jpg);
+    /* margin-bottom: 2rem; */
+  }
+  .menu_container {
+    height: 886px;
+    width: 700px;
+    border: 1px solid black;
+    margin: auto;
+    margin-top: 70px;
+    background-color: white;
+  }
+  #menu_container_heading {
+    margin-top: 2rem;
+    margin-left: 2rem;
+    font-size: 48px;
+  }
+
+  .menu_container > p {
+    margin-left: 2rem;
+    margin-top: 0.8rem;
+
+    font-size: 18px;
+    line-height: 1.2rem;
+  }
+  .first_row {
+    display: flex;
+    margin-left: 1rem;
+    margin-top: 1.5rem;
+    justify-content: space-evenly;
+    margin-bottom: 5rem;
+  }
+  .first_row > div {
+    height: 202px;
+    width: 198px;
+    /* border: 1px solid red; */
+  }
+  .second_row {
+    display: flex;
+    margin-left: 1rem;
+    margin-top: 2rem;
+    justify-content: space-evenly;
+    margin-bottom: 4.8rem;
+  }
+  .second_row > div {
+    height: 202px;
+    width: 198px;
+    /* border: 1px solid red; */
+  }
+  .item_img {
+    height: 212px;
+    width: 195px;
+    border-radius: 10px;
+  }
+  #view_btn {
+    margin-top: 2rem;
+    height: 48px;
+    width: 650px;
+    background-color: #3167ff;
+    color: white;
+    border: none;
+    font-size: 18px;
+    font-family: Favoritfreshly, sans-serif;
+    margin-left: 1.5rem;
+  }
+  .flexible_plans{
+    height: 1210px;
+    width: 100%;
+    background-color: #fffdf7;
+    border: 1px solid transparent;
+  }
+  #freshly_img{
+    margin-left: 680px;
+    margin-top: 80px;
+  }
+  .flexible_plans>h2{
+    font-size: 38px;
+    text-align: center;
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+  .flexible_plans>p{
+    line-height: 1.5rem;
+    text-align: center;
+    
+  }
+  .meals{
+    display: flex;
+    height: 300px;
+    width: 80%;
+    /* border: 1px solid red; */
+    margin: auto;
+    justify-content: space-evenly;
+    margin-top: 3rem;
+
+  }
+  .meals>div{
+    height: 224px;
+    width: 198px;
+    /* border: 1px solid red; */
+  }
+  .meals_img{
+    height: 224px;
+    width: 224px
+  }
+  .quantity_meals{
+    font-size: 28px;
+    text-align: center;
+    color: #357471;
+    font-weight: bold;
+    margin-top: 5px;
+  }
+  #shipping{
+    text-align: center;
+    color: #357471;
+    font-weight: bold;
+  }
+  #sign_up_now{
+    height: 48px;
+    width: 144px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color:#3167ff;
+    color: white;
+    margin-top: 25px;
+    border: none;
+
+  }
+  .btn_wrap{
+    text-align: center;
+    margin-bottom: 80px;
+  }
+  #review_h1{
+    text-align: center;
+    font-size: 48px;
+    font-family: Favoritfreshly,sans-serif;
+    margin-bottom: 60px;
+  }
+  .star{
+    display: flex;
+    /* border: 1px solid red; */
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    
+  }
+  .star>div{
+    height: 234px;
+    width: 381px;
+    /* border: 1px solid red; */
+    margin: auto;
+  }
+  .star_img{
+    height: 24px;
+    width: 166px;
+    margin-left: 0.9rem;
+    margin-bottom: 40px;
+  }
+  .customer_review{
+    margin-bottom: 5px;
+    font-size: 20px;
+    /* line-height: 1.4rem; */
+    
+  }
+  .customer_name{
+    margin-top: 1rem;
+  }
+     .footer {
+  padding-top: 60px;
+  display: flex;
+  height: 320px;
+  width: 100%;
+  background-color: white;
+  gap: 120px;
+  margin-bottom: 40px;
+}
+
+.footer_logo {
+  height: 28px;
+  width: 120px;
+  margin-left: 350px;
+  padding-top: 25px;
+}
+
+.company {
+  margin-left: 10px;
+  padding-top: 25px;
+  /* border: 1px solid red; */
+}
+
+.company>a {
+  display: list-item;
+  list-style: none;
+  line-height: 1.8rem;
+  color: #666;
+  text-decoration: none;
+}
+
+.learn_more {
+  padding-top: 25px;
+}
+
+.learn_more>a {
+  display: list-item;
+  list-style: none;
+  line-height: 1.8rem;
+  color: #666;
+  text-decoration: none;
+  text-align: left;
+}
+
+.join_us {
+  padding-top: 25px;
+}
+
+h6 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.social_media_icons {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+#iphone {
+  height: 40px;
+  width: 120px;
+  margin-bottom: 15px;
+}
+
+#android {
+  height: 40px;
+  width: 120px;
+}
+
+.cart_btn {
+  border: none;
+  background-color: #fff;
+}
+
+.cart_btn>i {
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.fvrt_btn {
+  border: none;
+  background-color: #fff;
+
+}
+
+.fvrt_btn>i {
+  font-size: 22px;
+  cursor: pointer;
+
+}

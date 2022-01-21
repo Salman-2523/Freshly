@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Freshly - Login</title>
+    <script src="https://kit.fontawesome.com/629044acfa.js" crossorigin="anonymous"></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        /* box-sizing: border-box; */
+      }
+      .main_nav {
+        top: 0;
+        position: fixed;
+        display: flex;
+        height: 54px;
+        width: 100%;
+        padding: 8px 20px;
+        background-color: #fff;
+        color: black;
+      }
+      .logo {
+        margin-right: 320px;
+        height: 27px;
+        width: 116px;
+        margin-top: 15px;
+      }
+      .sub_headings {
+        display: flex;
+        /* border: 1px solid red; */
+        height: 25px;
+        width: 600px;
+        /* margin: auto; */
+        gap: 30px;
+        margin-left: 50px;
+        margin-top: 14px;
+      }
+      .sub_headings > div > a {
+        text-decoration: none;
+        color: black;
+      }
+      .login_signup {
+        display: flex;
+        /* border: 1px solid red; */
+        margin-right: 100px;
+        width: 320px;
+        justify-content: space-evenly;
+      }
+      .login_signup > div {
+        /* border: 1px solid black; */
+        height: 20px;
+        margin-top: 20px;
+        font-size: 16px;
+      }
+      .login_signup > div > a {
+        text-decoration: none;
+        color: black;
+      }
+      .login_signup > button {
+        padding: 10px 16px;
+        margin-top: 10px;
+        /* border: 1px solid red; */
+        margin-bottom: 5px;
+      }
+      .login_signup > button > a {
+        text-decoration: none;
+      }
+      #login {
+        background-color: #fff;
+        border: transparent;
+      }
+      #signup {
+        background-color: #3167ff;
+        border: transparent;
+      }
+      #signup > a {
+        color: white;
+      }
+      .main {
+        height: 470px;
+        width: 100%;
+        background-color: #fffdf7;
+      }
+      #main_h1 {
+        font-size: 48px;
+        /* margin-top: 100px; */
+        text-align: center;
+        /* padding: 100px; */
+        /* border: 1px solid red; */
+        padding-top: 120px;
+      }
+      .form {
+        height: 280px;
+        /* border: 1px solid red; */
+        width: 600px;
+        margin: auto;
+        margin-bottom: 100px;
+      }
+      #email {
+        height: 38px;
+        width: 500px;
+        padding: 0 10px;
+        margin-top: 5px;
+        margin-bottom: 14px;
+      }
+      #password {
+        height: 38px;
+        width: 500px;
+        padding: 0 10px;
+        margin-top: 5px;
+      }
+      label {
+        font-size: 14px;
+      }
+      #btn {
+        height: 38px;
+        width: 525px;
+        padding: 0 10px;
+        margin-top: 15px;
+        background-color: #2a6dff;
+        border-color: #2a6dff;
+        border: none;
+        margin-bottom: 22px;
+      }
+      .flex {
+        display: flex;
+        /* border: 1px solid black; */
+        justify-content: space-between;
+        width: 522px;
+      }
+      .flex > div > a {
+        color: #2a6dff;
+      }
+      .footer {
+          display: flex;
+        height: 300px;
+        width: 100%;
+        background-color: white;
+        gap: 120px;
+        
+      }
+      .footer_logo{
+          height: 28px;
+          width: 120px;
+          margin-left: 350px;
+           padding-top: 25px;
+      }
+      .company{
+          margin-left: 10px;
+          padding-top: 25px;
+          /* border: 1px solid red; */
+      }
+      .company>a{
+        display: list-item;
+        list-style: none;
+        line-height: 1.8rem;
+        color: #2a6dff;
+      }
+      .learn_more{
+          padding-top: 25px;
+      }
+      .learn_more>a{
+          display: list-item;
+          list-style: none;
+          line-height: 1.8rem;
+          color: #2a6dff;
+      }
+      .join_us{
+          padding-top: 25px;
+      }
+      h6{
+          font-size: 16px;
+          margin-bottom: 10px;
+      }
+      .social_media_icons{
+          display: flex;
+          gap: 15px;
+          margin-bottom: 15px;
+      }
+      #iphone{
+        height: 40px;
+        width: 120px;
+        margin-bottom: 15px;
+        
+      }
+      #android{
+          height: 40px;
+          width: 120px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main_nav">
+      <div class="sub_headings">
+        <div><a href="">Plans & Menu </a></div>
+        <div><a href=""> About</a></div>
+        <div><a href=""> For Business</a></div>
+        <div><a href=""> Gifts</a></div>
+      </div>
+
+      <div class="logo">
+        <img
+          src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5fc4feea074f5b86a6c62285_freshly-logo-R.svg"
+          alt=""
+        />
+      </div>
+
+      <div class="login_signup">
+        <div>
+          <a href="">Get $30</a>
+        </div>
+
+        <div>
+          <a href="">Help</a>
+        </div>
+        <button id="login">
+          <a href="">Login</a>
+        </button>
+        <button id="signup">
+          <a href="signup.html">Sign Up</a>
+        </button>
+      </div>
+    </div>
+    <div class="main">
+      <h1 id="main_h1">Log In</h1>
+      <div class="form">
+        <div>
+          <label for="email">Email</label><br />
+          <input type="email" placeholder="you@domain.com" id="email" /><br />
+        </div>
+        <div>
+          <label for="password">Password</label><br />
+          <input type="password" placeholder="enter password" id="password" />
+        </div>
+        <div class="btn_wrap">
+          <button id="btn">Log In</button>
+        </div>
+        <div class="flex">
+          <div>
+            <a href="">Forgot Password?</a>
+          </div>
+          <div>Don't have an account? <a href="signup.html">Get Started</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="footer_logo">
+        <img
+          src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5fc4feea074f5b86a6c62285_freshly-logo-R.svg"
+          alt=""
+        />
+        &copy;Freshly Inc.
+      </div>
+      
+      <div class="company">
+          <h6>Company</h6>
+          <a href="">Careers</a>
+          <a href="">Contact Us</a>
+          <a href="">Press</a>
+          <a href="">Terms</a>
+          <a href="">Privacy</a>
+          
+      </div>
+      <div class="learn_more">
+          <h6>Learn More</h6>
+          <a href="">Plans & Menu</a>
+          <a href="">Why Freshly?</a>
+          <a href="">Gifts</a>
+          <a href="">Refer a Friend</a>
+          <a href="">FAQs</a>
+          <a href="">Blog</a>
+          <a href="">Students</a>
+      </div>
+      <div class="join_us">
+          <h6>Join Us</h6>
+          <div class="social_media_icons">
+               <div>
+                   <a href="">
+                    <i class="fab fa-facebook-square"></i>
+                   </a>
+               </div>
+               <div>
+                   <a href="">
+                    <i class="fab fa-instagram"></i>
+                   </a>
+               </div>
+               <div>
+                   <a href="">
+                    <i class="fab fa-twitter"></i>
+                   </a>
+               </div>
+               <div>
+                   <a href="">
+                    <i class="fab fa-pinterest"></i>
+                   </a>
+               </div>
+          </div>
+            <div>
+                <img src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5d6439d4fb92e7630e46976b_Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg" alt="" id="iphone">
+            </div>
+            <div>
+                <img src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5d643dd558306bfe1df5ef8b_google-play-badge.png" alt="" id="android">
+            </div>
+      </div>
+    </div>
+  </body>
+  <script src="login.js"></script>
+</html>
+
+<!-- <script>
+  document.querySelector('#btn').addEventListener('click', login)
+  var registeredUsers = JSON.parse(localStorage.getItem('userDB'));
+  // console.log(registeredUsers);
+  
+  function login(){
+  var email = document.querySelector('#email').value;
+  var password = document.querySelector('#password').value;
+
+    if(email == 'admin' && password == 'admin'){
+      window.location.href = 'admin.html'
+    }
+    else{
+
+       var flag = false;
+  for(var i=0; i<registeredUsers.length; i++){
+    if(registeredUsers[i].emailAddress == email && registeredUsers[i].password == password){
+      // alert('welcome' + ' ' + registeredUsers[i].userName);
+      window.location.href = 'index.html'
+      flag = true;
+      break;
+    }
+  }
+  if(flag == true){
+    alert('welcome to freshly')
+  }else{
+    alert('wrong details')
+  }
+}
+
+}
+</script> -->

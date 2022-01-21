@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .otp{
+            text-align: center;
+            
+        }
+        button{
+            margin-top: 10px;
+            padding: 10px 40px;
+            border: none;
+            color: #fff;
+            border-radius: 5px;
+            background-color: #3167ff;
+            cursor: pointer;
+        }
+        #otp{
+            border-radius: 5px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+      <div class="otp">
+          <h2>Please Enter The OTP</h2>
+          <input type="text" id="otp"><br>
+          <button onclick="otp()">Submit</button>
+      </div>
+</body>
+</html>
+
+<script>
+    function otp(){
+        var otp = document.querySelector('#otp').value;
+        var flag = false
+        if(otp == 2523){
+            alert('Your order has been placed successfully!')
+            alert('we hope you enjoy the meal')
+            flag = true;
+            window.location.href = 'product.html'
+        }
+        if(flag == false){
+            alert('wrong OTP')
+        }
+    }
+    
+</script>
