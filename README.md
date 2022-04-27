@@ -33,4 +33,5 @@ Freshly offers weekly subscription that delivers fresh (never frozen!) meals, al
 <h4>Product Gallery</h4>
 <img src="product page.png" alt="Product Gallery">
 <br/>
+<hr/>
 <h3>A solo project built by me in five days <h3/>
