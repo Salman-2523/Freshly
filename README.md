@@ -18,17 +18,19 @@ Freshly offers weekly subscription that delivers fresh (never frozen!) meals, al
 
 <h2>Some Glipmse of the website</h2>
 
-<p>Landing Page</p>
-<img src="" alt="landing page">
+<h4>Landing Page</h4>
+<img src="landing page.png" alt="landing page">
 
 <hr>
-<p>Sign Up Page</p>
-<img src="" alt="sign up page">
+<h4>Sign Up Page</h4>
+<img src="sign up page.png" alt="sign up page">
 
 <hr>
-<p>Login Page</p>
-<img src="" alt="login page">
+<h4>Login Page</h4>
+<img src="login page.png" alt="login page">
 
 <hr>
-<p>Product Gallery</p>
-<img src="" alt="Product Gallery">
+<h4>Product Gallery</h4>
+<img src="product page.png" alt="Product Gallery">
+<br/>
+<h3>A solo project built by me in five days <h3/>
